@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+
+
+.navbar.scrolled{
+    background-color: rgb(208, 224, 233) !important;
+    transition: background 500ms;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #1db0c4;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.navbar-dark .navbar-brand{
+    font-size: 30px; 
+    padding-right: 5em !important;
+  
+}
+
+
+/* First Section */
+.showcase {
+    position:absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 1s;
+}
+  
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 86, 133, 0.2);
+    /* background:#fdf1ad;
+    mix-blend-mode: overlay; */
+}
+
+.showcase {
+    position: relative;
+    z-index: 10;
+}
+
+.showcase h2 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.showcase h3 {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.showcase p {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px 0;
+    max-width: 700px;
+    
+}
+
+.showcase a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.showcase a:hover{
+    letter-spacing: 6px;
+}
+
+/* Second Section */
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background: url(clean.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Third Section */
+.carousel-item {
+    margin-top: 30px;
+    height: 500px;
+  }
+  
+  .carousel-image-1 {
+    background: url(male.jpg);
+    background-size: cover;
+  }
+  
+  .carousel-image-2 {
+    background: url(berati.jpg);
+    background-size: cover;
+  }
+  
+  .carousel-image-3 {
+    background: url(plazh.jpg);
+    background-size: cover;
+  }
+
+  /* Footer styling */
+
+  #main-footer {
+    background: #000;
+    color: #fff;
+  }
+
+/* -------Testimonials - Reviews ----------- */
+#testimonials {
+    padding-top: 70px;
+    padding-bottom: 100px; ;
+}
+
+#testimonials h1{
+    margin-bottom: 20px;
+    color: #013f7e;
+}
+
+#testimonials p{
+    margin-bottom: 20px;
+    color: #013f7e;
+}
+
+#testimonials .col-md-4 {
+    padding: 10px 30px;
+
+}
+
+#testimonials img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   margin-left: -30px;
+   margin-top: -40px;
+   margin-bottom: 30px;
+   border-radius: 5px solid #fff ;
+}
+
+.review {
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.review .fa-twitter{
+    color: #013f7e;
+}
+
+#testimonials span{
+    color: #013f7e;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+ 
+/* ------------------Packages styling-------------------------- */
+#inner{
+    overflow: hidden;
+}
+
+#inner img{
+    transition: all 1.5s;
+}
+
+#inner:hover img{
+    transform: scale(1.5);
+}
+
+#search { 
+    padding: 50px 10px;
+    margin-top:50px;
+    background: #fff;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+
+#search h3 {
+    color: #333;
+}
+
+.search-location .form-control {
+    border-radius: 50px;
+    max-width: 350px;
+    display: inline-flex;
+    margin: 10px 20px;
+}
+
+.search-location .btn{
+    border-radius: 50px;
+    width: 150px;
+}
+
+/* --------------Package Banner -Home Page-------------------- */
+
+.banner {
+    min-height: 500px;
+    background: url(surfing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+    
+}
+
+.banner-highlights {
+    
+    padding: 70px 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #fff;
+}
+
+.booking-btn {
+    width: 170px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.booking-btn a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+
+.booking-btn:hover{
+    letter-spacing: 6px;
+    border: none !important;
+    background: rgb(218, 120, 91) !important;
+}
+
+
+
+/* ---------------------About Us Styling----------------------------- */
+#page-header {
+    margin-top: 50px;
+    height: 200px;
+    background: url(clean.jpg);
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: rgb(104, 103, 103);
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+  }
+
+#card_even{
+    background-color: rgb(154, 184, 201) !important;
+}
+
+.about-img {
+    margin-top: -50px;
+    margin-left: 50px;
+  }
+
+/* ----------------------Cantact Us------------------------ */
+
+#staff {
+    background-color:rgb(208, 224, 233) !important ;
+}
+  
+ 
